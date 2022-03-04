@@ -1,4 +1,12 @@
 #include "stats.h"
+#include <math.h>
+#ifdef NAN
+/* NAN is supported */
+#endif
+#ifdef INFINITY
+/* INFINITY is supported */
+#endif
+
 
 struct Stats compute_statistics(const float* numberset, int setlength) {
     struct Stats s;
@@ -10,6 +18,13 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     max= numberset[0];
     min=numberset[0];
     sum=numberset[0];
+    if(setlength==0)
+    {
+    	return s;
+    }
+    else
+    {
+		
     for (int i = 1; i < setlength; i++)
 	{
 		if (numberset[i] > max) 
@@ -26,8 +41,8 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 	s.average=avg;
 	s.max=max;
 	s.min=min;
-
     return s;
+    }
 }
 
 int emailAlertCallCount = 0;
