@@ -33,11 +33,11 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
 int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 
-int main()
+/*int main()
 {
     Stats computedStats;
     float numberset[] = {1.5, 8.9, 3.2, 4.5};
     int setlength = sizeof(numberset) / sizeof(numberset[0]);
     computedStats = compute_statistics(numberset, setlength);
 return 0;
-}
+}*/
