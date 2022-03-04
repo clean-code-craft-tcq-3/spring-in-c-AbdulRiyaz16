@@ -20,9 +20,12 @@ TEST_CASE("average is NaN for empty array") {
     Stats computedStats = compute_statistics(0, 0);
     //All fields of computedStats (average, max, min) must be
     //NAN (not-a-number), as defined in math.h
-    
+    //
     //Design the REQUIRE statement here.
     //Use https://stackoverflow.com/questions/1923837/how-to-use-nan-and-inf-in-c
+     REQUIRE(isnan(computedStats.average));
+     REQUIRE(isnan(computedStats.min));
+     REQUIRE(isnan(computedStats.max));
 }
 
 TEST_CASE("raises alerts when max is greater than threshold") {
@@ -39,6 +42,6 @@ TEST_CASE("raises alerts when max is greater than threshold") {
 
     // need a way to check if both emailAlerter, ledAlerter were called
     // you can define call-counters along with the functions, as shown below
-    REQUIRE(emailAlertCallCount == 1);
-    REQUIRE(ledAlertCallCount == 1);
+   REQUIRE(emailAlertCallCount == 1);
+ REQUIRE(ledAlertCallCount == 1);
 }
