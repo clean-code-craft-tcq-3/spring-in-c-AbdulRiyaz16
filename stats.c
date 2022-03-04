@@ -18,7 +18,7 @@ struct Stats compute_statistics(const float* numberset, int setlength) {
     max= numberset[0];
     min=numberset[0];
     sum=numberset[0];
-    if(isetlength==0)
+    if(setlength==0)
     {
     	return s;
     }
