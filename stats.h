@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-typedef struct {
+struct {
     float average;
     float min;
     float max;
