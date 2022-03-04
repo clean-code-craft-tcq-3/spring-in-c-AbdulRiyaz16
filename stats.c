@@ -35,7 +35,7 @@ int ledAlertCallCount = 0;
 
 int main()
 {
-    struct Stats computedStats;
+    Stats computedStats;
     float numberset[] = {1.5, 8.9, 3.2, 4.5};
     int setlength = sizeof(numberset) / sizeof(numberset[0]);
     computedStats = compute_statistics(numberset, setlength);
