@@ -50,12 +50,12 @@ int emailAlertCallCount = 0;
 int ledAlertCallCount = 0;
 
 
-void Emailalerter ()
+void emailAlerter ()
 {
 	emailAlertCallCount=1;
 }
 
-void LEDalerter ()
+void ledAlerter ()
 {
 	ledAlertCallCount=1;
 }
