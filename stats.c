@@ -10,15 +10,15 @@
 
 struct Stats compute_statistics(const float* numberset, int setlength) {
     struct Stats s;
-    s.average = 0;
-    s.min = 0;
-    s.max = 0;
+   // s.average = 0;
+    //s.min = 0;
+    //s.max = 0;
     float max,min,avg;
     float sum;
     max= numberset[0];
     min=numberset[0];
     sum=numberset[0];
-    if(setlength==0)
+    if(isetlength==0)
     {
     	return s;
     }
