@@ -1,35 +1,3 @@
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@AbdulRiyaz16 
-clean-code-craft-tcq-3
-/
-spring-in-c-AbdulRiyaz16
-Public
-generated from clean-code-craft-tcq-1/statisact-c
-Code
-Issues
-Pull requests
-1
-Actions
-Projects
-Wiki
-Security
-Insights
-Settings
-spring-in-c-AbdulRiyaz16/stats.c
-@AbdulRiyaz16
-AbdulRiyaz16 Update stats.c
-Latest commit 815f25e 1 minute ago
- History
- 2 contributors
-@AbdulRiyaz16@github-classroom
-58 lines (53 sloc)  1.02 KB
-   
 #include "stats.h"
 #include <math.h>
 #ifdef NAN
