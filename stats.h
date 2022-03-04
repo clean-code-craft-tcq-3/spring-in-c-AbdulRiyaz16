@@ -1,9 +1,16 @@
 #include <stdio.h>
+#include <math.h>
+#ifdef NAN
+/* NAN is supported */
+#endif
+#ifdef INFINITY
+/* INFINITY is supported */
+#endif
 
 struct Stats{
-    float average;
-    float min;
-    float max;
+    float average=NAN;
+    float min=NAN;
+    float max=NAN;
 
 };
 struct Stats compute_statistics(const float* numberset, int setlength);
